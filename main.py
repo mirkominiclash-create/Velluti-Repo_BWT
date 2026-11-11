@@ -1,10 +1,9 @@
+#algoritmo trasformata
 parola = "banana$"
 lettera = ""
 matrice=[]
 i = 0
 j = 0
-
-
 for carattere in parola:
    
    
