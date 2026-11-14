@@ -25,7 +25,12 @@ def codifica(matrice):
         codiceBWT.append(matrice[z][len(matrice[z]) - 1:])
         z = z + 1
     return codiceBWT
-    
+#unione delle funzioni
+def calcolaBWT(parola):
+     bwt = rotazione(parola)
+     bwt = ordinamento(bwt)
+     bwt = codifica(bwt)
+     return bwt
      
 parola = input("inserisci la parola da codificare: ").lower()
 codificaBWT = rotazione(parola)
@@ -40,6 +45,13 @@ codificaBWT = codifica(codificaBWT)
 print("-------------")
 print (codificaBWT)
 print("-------------")
+
+print("******************************")
+btw = calcolaBWT(parola)
+print("-------------")
+print(btw)
+print("-------------")
+
 
 
 
