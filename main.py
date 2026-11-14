@@ -4,15 +4,12 @@ lettera = ""
 matrice=[]
 i = 0
 j = 0
-
 for carattere in parola:
-    matrice.append(parola[i:]+parola[:j])
-    
+    matrice.append(parola[i:]+parola[:j])  
     j = j+1
     i = i+1
 print (matrice)
 x = 0
-
 for stringa in matrice:
     y = 0
     for stringa in matrice:
@@ -21,7 +18,14 @@ for stringa in matrice:
         y = y + 1        
     x = x + 1
 
-print(matrice)    
+print(matrice)
+z = 0
+codiceBWT=[]
+for stringa in matrice:
+     codiceBWT.append(matrice[z][len(matrice[z]) - 1:])
+     z = z + 1
+print(codiceBWT)
+
 
 
 
