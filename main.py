@@ -31,7 +31,7 @@ def calcolaBWT(parola):
      bwt = ordinamento(bwt)
      bwt = codifica(bwt)
      return bwt
-     
+"""    
 parola = input("inserisci la parola da codificare: ").lower()
 codificaBWT = rotazione(parola)
 print("-------------")
@@ -52,7 +52,7 @@ print("-------------")
 print(btw)
 print("-------------")
 
-
+""" 
 
 
 
